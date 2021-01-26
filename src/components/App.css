@@ -1,0 +1,20 @@
+.App{
+  background-color: red;
+}
+
+.navBar{
+  width: 100%;
+  height: 648px;
+  background-image: url("./img/Top_baner.png");
+  background-size: 100% 100%;
+
+}
+.textBanner{
+  margin-left:9% ;
+  margin-right: 40%;
+  margin-top:24%;
+  padding:20%;
+  font-size: 45px;
+  color: white;
+  background-color: #21394F;
+}
