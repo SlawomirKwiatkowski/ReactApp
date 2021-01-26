@@ -1,0 +1,39 @@
+.btn {
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: 'Times New Roman', serif;
+}
+
+.theme-primary {
+  border-radius: 2em;
+  text-align: center;
+  background: #c5ad8f;
+  color: #fff;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.theme-empty {
+  background-color: white;
+  margin-right: 3vh;
+}
+
+.theme-onbanner {
+  background-color: transparent;
+  color: #c5ad8f;
+  border: 2px solid #c5ad8f;
+  border-radius: 2em;
+}
+
+.size-medium {
+  padding: 10px 22px;
+  margin-right: 2vh;
+  width: 15vw;
+}
+
+.size-small {
+  height: 45px;
+  width: 60px;
+  border-radius: 50%;
+}

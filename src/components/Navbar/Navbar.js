@@ -31,11 +31,11 @@ class Navbar extends Component{
                     })}
 
                 </ul>
-                <BaseButton buttonStyle="btn--empty"
-                buttonSize="btn--small"/>
+                <BaseButton theme="empty"
+                size="small"/>
                 <BaseButton
-                buttonStyle="btn--primary"
-                buttonSize ="btn--medium">Contact Us</BaseButton>
+                theme="primary"
+                size ="medium">Contact Us</BaseButton>
 
 
             </nav>

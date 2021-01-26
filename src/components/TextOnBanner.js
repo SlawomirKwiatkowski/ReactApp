@@ -10,8 +10,8 @@ class TextOnBanner extends Component{
                 For you and for <br/>
                 generations to come.<br/>
                 <BaseButton
-                buttonStyle="btn--onbanner"
-                buttonSize ="btn--medium">
+                theme="onbanner"
+                size ="medium">
                 Our Services
                 </BaseButton>
 
