@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import {Link} from 'react-router-dom';
 import './Navbar.css';
 import {MenuItems}from "../MenuItems";
 import {BaseButton} from '../BaseButton'
@@ -21,8 +20,8 @@ class Navbar extends Component{
                 <ul className="nav-menu"> 
                     {MenuItems.map((item,index)=>{
                         return (
-                            <li>
-                                <a className={item.cName} href={item.url}>
+                            <li key = {index}>
+                                <a className={item.cName} href={item.url} >
                                 {item.title}
                                 </a> 
                             </li>
