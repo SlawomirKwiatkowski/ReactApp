@@ -1,0 +1,59 @@
+.NavbarItems {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: "Times New Roman", serif;
+}
+
+.navbar-logo {
+  width: 90px;
+  color: #fff;
+  margin-top: 3%;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 20px;
+  list-style: none;
+  text-align: center;
+  width: 90vw;
+  justify-content: end;
+  margin-right: 2rem;
+}
+.nav-links {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-links-mobile {
+  display: none;
+}
+
+.textBanner {
+  padding: 3vw;
+}
+
+.navBar {
+  width: 100%;
+  height: 648px;
+  background-image: url("../img/Top_baner.png");
+  background-size: cover;
+}
+.textBanner {
+  margin-left: 9%;
+  margin-right: 40%;
+  margin-top: 24%;
+  font-size: 45px;
+  color: white;
+  background-color: #21394f;
+}

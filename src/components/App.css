@@ -1,20 +1,25 @@
-.App{
-  background-color: red;
+.App {
+  background-color: #e5e5e5;
 }
 
-.navBar{
+/* .navBar {
   width: 100%;
   height: 648px;
   background-image: url("./img/Top_baner.png");
-  background-size: 100% 100%;
-
+  background-size: cover;
 }
-.textBanner{
-  margin-left:9% ;
+.textBanner {
+  margin-left: 9%;
   margin-right: 40%;
-  margin-top:24%;
-  padding:20%;
+  margin-top: 24%;
+  padding: 20%;
   font-size: 45px;
   color: white;
-  background-color: #21394F;
+  background-color: #21394f;
+} */
+
+main {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,0 +1,189 @@
+.sectionOurPromise {
+  padding-top: 10%;
+  padding-left: 40%;
+  padding-right: 10%;
+  color: black;
+}
+
+.sectionOurPromise h1 {
+  font-weight: normal;
+  color: black;
+}
+
+.sectionOurPromise h2 {
+  padding-bottom: 2%;
+  font-weight: normal;
+  color: black;
+}
+
+.sectionOurServices {
+  margin-left: 10%;
+}
+
+.sectionOurServices h1 {
+  color: black;
+}
+
+.sectionOurServices .sectionOurServicesRight {
+  margin-left: 40%;
+  margin-top: 10%;
+  margin-right: 10vw;
+  padding-left: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sectionOurServices .sectionOurServicesRight h1 {
+  border-top: 1px solid red;
+  font-weight: normal;
+  color: black;
+}
+
+.sectionOurServices .sectionOurServicesRight h2 {
+  margin-top: 3%;
+  text-align: right;
+  font-weight: normal;
+  padding: 5%;
+  font-size: 24px;
+  background-color: #f3efe8;
+}
+
+.sectionOurServices .sectionOurServicesRight h3 {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: left;
+  margin: 0;
+  color: black;
+}
+
+.sectionOurOffice {
+  position: relative;
+  width: 100%;
+}
+
+.sectionOurOffice img {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  width: 60%;
+  height: auto;
+}
+
+nav.officeNav {
+  padding: 4%;
+  position: absolute;
+  width: 25%;
+  top: 75%;
+  left: 25%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: blue;
+  background-color: #21394f;
+}
+
+nav.officeNav a {
+  cursor: pointer;
+  color: white;
+  opacity: 50%;
+  display: inline;
+  display: block;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  font-weight: bold;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+nav.officeNav a :visited {
+  color: black;
+  opacity: 100%;
+}
+
+nav.officeNav a :hover {
+  color: white;
+  opacity: 100%;
+}
+
+nav.officeNav a :active {
+  color: #c41111;
+  opacity: 50%;
+}
+
+nav.officeNav h3 {
+  line-height: 1.5;
+  padding-bottom: 3%;
+  color: #c5ad8f;
+}
+
+nav.officeNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.officeNav li {
+  padding-top: 4%;
+  list-style: none;
+}
+
+nav.officeNav span {
+  font-size: 28px;
+  margin-right: 5%;
+}
+
+.sectionOurOffice {
+  margin-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.sectionOurTeam {
+  width: 100%;
+  padding: 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  color: black;
+}
+
+section.sectionOurTeam .text {
+  padding-right: 10%;
+  width: 30%;
+}
+
+section.sectionOurTeam .text h1 {
+  color: black;
+}
+
+section.sectionOurTeam .text h2 {
+  font-weight: normal;
+  color: black;
+  line-height: 2.5;
+  font-size: 16px;
+}
+
+section.sectionOurTeam img {
+  max-width: 100%;
+  display: block;
+  width: 40%;
+  height: auto;
+}
+/*# sourceMappingURL=content.css.map */

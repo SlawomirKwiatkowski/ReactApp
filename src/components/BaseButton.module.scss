@@ -1,8 +1,10 @@
+$btn-base-color: #C5AD8F;
 .btn {
   cursor: pointer;
   font-size: 1.2rem;
-  font-family: 'Times New Roman', serif;
-};
+
+  font-family: "Times New Roman", serif;
+}
 .theme-primary {
   border-radius: 2em;
   text-align: center;
@@ -16,6 +18,19 @@
 .theme-empty {
   background-color: white;
   margin-right: 3vh;
+  :focus{
+    border:none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+  }
+
+}
+.theme-empty2{
+  background-color: $btn-base-color;
+  outline: none;
+  border: none;
+  border-radius: 2em;
 }
 
 .theme-onbanner {
@@ -23,9 +38,20 @@
   color: #c5ad8f;
   border: 2px solid #c5ad8f;
   border-radius: 2em;
+  cursor: pointer;
+}
+.theme-arrowbutton {
+  background-color: white;
+  margin-right: 15%;
 }
 
 .size-medium {
+  padding: 10px 22px;
+  margin-right: 2vh;
+  width: 15vw;
+}
+
+.size-medium2 {
   padding: 10px 22px;
   margin-right: 2vh;
   width: 15vw;
@@ -35,4 +61,30 @@
   height: 45px;
   width: 60px;
   border-radius: 50%;
+}
+
+.size-small2 {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.size-small3 {
+  height: 31px;
+  width: 31px;
+  border-radius: 50%;
+  margin-right: auto;
+  margin-left: 10%;
+}
+
+.size-medium2 {
+  padding: 10px 22px;
+  margin-right: 2vh;
+  width: 150px;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  -ms-transform: translate(-50%, -50%);
 }

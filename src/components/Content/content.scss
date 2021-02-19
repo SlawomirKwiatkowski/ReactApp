@@ -1,0 +1,172 @@
+.main {
+}
+.sectionOurPromise {
+  padding-top: 10%;
+  padding-left: 40%;
+  padding-right: 10%;
+  color: black;
+  h1 {
+    font-weight: normal;
+    color: black;
+  }
+
+  h2 {
+    padding-bottom: 2%;
+    font-weight: normal;
+    color: black;
+  }
+}
+
+.sectionOurServices {
+  margin-left: 10%;
+
+  h1 {
+    color: black;
+  }
+
+  .sectionOurServicesRight {
+    margin-left: 40%;
+    margin-top: 10%;
+    margin-right: 10vw;
+    padding-left: 10%;
+    display: flex;
+    flex-direction: column;
+
+    h1 {
+      border-top: 1px solid red;
+      font-weight: normal;
+      color: black;
+    }
+
+    h2 {
+      margin-top: 3%;
+      text-align: right;
+      font-weight: normal;
+      padding: 5%;
+      font-size: 24px;
+      background-color: #f3efe8;
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 24px;
+      text-align: left;
+      margin: 0;
+      color: black;
+    }
+  }
+}
+
+.sectionOurOffice {
+  position: relative;
+  width: 100%;
+
+  img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: 10%;
+    width: 60%;
+    height: auto;
+  }
+}
+
+nav.officeNav {
+  padding: 4%;
+  position: absolute;
+  width: 25%;
+  top: 75%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: blue;
+  background-color: #21394f;
+
+  a {
+    cursor: pointer;
+    color: white;
+    opacity: 50%;
+    display: inline;
+    display: block;
+    text-decoration-line: none;
+    text-decoration-style: none;
+    font-weight: bold;
+    transition: 0.2s;
+
+    :visited{
+      color: black;
+      opacity: 100%;
+    }
+
+    :hover{
+      color: white;
+      opacity: 100%;
+    }
+
+    :active {
+      color: rgb(196, 17, 17);
+      opacity: 50%;
+    }
+  }
+}
+
+
+
+
+
+nav.officeNav h3 {
+  line-height: 1.5;
+  padding-bottom: 3%;
+  color: #c5ad8f;
+}
+
+nav.officeNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav.officeNav li {
+  padding-top: 4%;
+  list-style: none;
+}
+
+nav.officeNav span {
+  font-size: 28px;
+  margin-right: 5%;
+}
+
+.sectionOurOffice {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+section.sectionOurTeam {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  color: black;
+
+  .text {
+    padding-right: 10%;
+    width: 30%;
+
+    h1 {
+      color: black;
+    }
+
+    h2 {
+      font-weight: normal;
+      color: black;
+      line-height: 2.5;
+      font-size: 16px;
+    }
+  }
+
+  img {
+    max-width: 100%;
+    display: block;
+    width: 40%;
+    height: auto;
+  }
+}
