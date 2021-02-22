@@ -12,7 +12,7 @@ const Footer = () => {
 
 
   return (
-    <div className="footer">
+    <footer className="footer">
       <div className="bannerBottom">
       
       <div className="textOnBottomBanner">
@@ -29,7 +29,7 @@ const Footer = () => {
       <FooterBottomPart/>
 
 
-    </div>
+    </footer>
   );
 };
 

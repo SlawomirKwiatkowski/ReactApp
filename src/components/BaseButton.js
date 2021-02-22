@@ -1,21 +1,21 @@
-import React from "react";
-import s from "./BaseButton.module.scss";
-import classnames from "classnames";
-import PropTypes from "prop-types";
+import React from 'react';
+import s from './BaseButton.module.scss';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 export const BaseButton = ({
   children,
   type,
   onClick,
-  theme = "primary",
-  size = "medium",
+  theme = 'primary',
+  size = 'medium',
+  className,
 }) => {
   return (
     <button
-      className={classnames(s.btn, s[`theme-${theme}`], s[`size-${size}`])}
+      className={classnames(s.btn, className, s[`theme-${theme}`], s[`size-${size}`])}
       onClick={onClick}
-      type={type}
-    >
+      type={type}>
       {children}
     </button>
   );
@@ -23,6 +23,7 @@ export const BaseButton = ({
 
 BaseButton.propTypes = {
   children: PropTypes.node,
+  className: PropTypes.string,
 };
 BaseButton.defaultProps = {
   children: null,

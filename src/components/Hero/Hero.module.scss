@@ -1,0 +1,31 @@
+.hero {
+  height: 648px;
+  background-image: url("../img/Top_baner.png");
+  background-size: cover;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+
+.banner {
+  position: absolute;
+  bottom: -45px;
+  left: 10px;
+  max-width: 740px;
+  width: 100%;
+  padding: 40px 60px;
+  background: #21394F;
+  color: #fff;
+}
+
+.bannerInner {
+  max-width: 545px;
+  font-size: 45px;
+}
+
+.button {
+  margin-top: 25px;
+  display: block;
+}

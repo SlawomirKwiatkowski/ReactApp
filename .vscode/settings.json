@@ -1,5 +1,5 @@
 {
-  // "editor.formatOnSave": true,
+  "editor.formatOnSave": true,
   "editor.formatOnSaveMode": "file", // "modifications" sometimes behaves very strage
   "javascript.format.enable": false,
   "editor.codeActionsOnSave": {

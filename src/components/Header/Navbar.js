@@ -29,6 +29,8 @@ class Navbar extends Component {
           <BaseButton theme="primary" size="medium">
             Contact Us
           </BaseButton>
+
+
         </nav>
       </>
     );

@@ -1,5 +1,5 @@
-import { BaseButton } from "../BaseButton";
-import React, { Component } from "react";
+import { BaseButton } from '../BaseButton';
+import React, { Component } from 'react';
 
 class TextOnBanner extends Component {
   render() {

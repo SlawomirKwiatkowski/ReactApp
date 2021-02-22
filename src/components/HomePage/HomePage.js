@@ -1,24 +1,24 @@
-import React from "react";
+import React from 'react';
 
-import BannerHero from  "../Header/BannerHero"
-import Content from "../Content/Content";
-import Footer from "../Footer/Footer";
-
-
+import BannerHero from '../Header/BannerHero';
+import Hero from '../Hero/Hero';
+import Content from '../Content/Content';
+import Default from '../../templates/Default';
+import s from './HomePage.module.scss';
 
 const HomePage = () => {
   return (
-    <div className="homePage">
-      <header>
+    <Default className="homePage">
+      <header className={s.header}>
         <BannerHero />
       </header>
+
+      <Hero />
+
       <main>
         <Content />
       </main>
-      <footer>
-        <Footer />
-      </footer>
-    </div>
+    </Default>
   );
 };
 
