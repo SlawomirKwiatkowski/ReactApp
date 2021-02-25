@@ -1,0 +1,35 @@
+.sectionOurTeam {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: row;
+  color: black;
+
+  
+  
+  img {
+    margin-left: auto;
+    max-width: 100%;
+    display: block;
+    width: 50%;
+    height: auto;
+  }
+}
+.text {
+  padding-right: 10%;
+  width: 40%;
+
+  h1 {
+    color: black;
+    padding-bottom: 30px;
+  }
+
+  h2 {
+    font-weight: 500;
+    color: black;
+    line-height: 2;
+    font-size: 18px;
+    padding-bottom: 30px;
+  }
+}
+  

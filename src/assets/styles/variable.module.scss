@@ -1,0 +1,99 @@
+/*
+  Color
+*/
+$color-white: #fff;
+$color-black: #000;
+// Main
+$color-dark-wheat:#c5ad8f;
+$color-pretty-dark: #211e21;
+$color-ashy: #34363f;
+$color-metal-grey: #a0a0ac;
+$color-snow-in-april: #fbf9f9;
+$color-vape: #efeff1;
+$color-snow-in-april: #fbf9f9;
+// Accents
+$color-oh-so-green: #6e6;
+$color-ace-blue: #1641f7;
+$color-singularity-red: #fc1355;
+// Soft Accents
+$color-soft-not-so-green: #82ea93;
+$color-soft-ace-blue: #4264f3;
+$color-soft-singularity-red: #ff739a;
+// Secondary Accents
+$color-burn-my-eyes: #85fc99;
+$color-baby-blue: #80b0f8;
+$color-majinboo: #ff99b6;
+// Support
+$color-london-fog: #d1cfcf;
+$color-aubergine: #3e3855;
+$color-kinda-dirty: #4b464b;
+$color-fancy-pancy: #af1445;
+// Not included in design package:
+$color-cod-grey: #070707;
+
+/*
+  Breakpoint
+*/
+$bp-desktop: 1260px;
+
+/*
+  Font family
+*/
+$ff-sans: 'NB Akademie Std';
+$ff-sans-secondary: 'GT Cinetype';
+$ff-mono: 'GT Cinetype Mono';
+
+/*
+  Font weight
+*/
+$fw-light: 300;
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+/*
+  Z-index
+*/
+$z-header: 100;
+$z-datepicker-calendar: 150;
+$z-modal: 1000;
+$z-base-tooltip: 10000;
+
+/*
+  Dimensions
+*/
+$header-height: 73px;
+
+/*
+  Easing
+*/
+$ease-out-cubic: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in-out-cubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.335);
+$ease-out-circ: cubic-bezier(0.075, 0.82, 0.165, 1);
+$ease-in-out-circ: cubic-bezier(0.785, 0.135, 0.15, 0.86);
+$ease-in-expo: cubic-bezier(0.95, 0.05, 0.795, 0.035);
+$ease-out-expo: cubic-bezier(0.19, 1, 0.22, 1);
+$ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
+$ease-in-quad: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+$ease-out-quad: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+$ease-in-out-quad: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+$ease-in-quart: cubic-bezier(0.895, 0.03, 0.685, 0.22);
+$ease-out-quart: cubic-bezier(0.165, 0.84, 0.44, 1);
+$ease-in-out-quart: cubic-bezier(0.77, 0, 0.175, 1);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+$ease-in-sine: cubic-bezier(0.47, 0, 0.745, 0.715);
+$ease-out-sine: cubic-bezier(0.39, 0.575, 0.565, 1);
+$ease-in-out-sine: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+$ease-in-back: cubic-bezier(0.6, -0.28, 0.735, 0.045);
+$ease-out-back: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+$ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+// Export variables to JavaScript
+// Usage in JavaScript: import vars from 'src/assets/styles/utils/vars.module.scss';
+:export {
+  z-header: $z-header; // Example
+}

@@ -1,0 +1,33 @@
+$btn-base-color: #c5ad8f;
+.header {
+  width: 100%;
+  height: 593px;
+  bottom: 400px;
+  // background: url("../../assets/img/OurServicesBanner.png");
+  background-position: -300px 70%;
+}
+  
+
+.bannerServicesTop {
+  width: 100%;
+  height: 100%;
+  background: rgba(32, 55, 76, 0.9);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  h4 {
+    text-transform: uppercase;
+    margin:auto;
+    width: 780px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 65px;
+    text-align: center;
+    line-height: 1.4;
+    color: #c5ad8f;
+    font-weight: 400;
+  }
+}
+

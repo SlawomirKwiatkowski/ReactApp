@@ -23,20 +23,9 @@ export const BaseButton = ({
 
 BaseButton.propTypes = {
   children: PropTypes.node,
-  className: PropTypes.string,
-};
-BaseButton.defaultProps = {
-  children: null,
-};
-BaseButton.propTypes = {
   type: PropTypes.node,
-};
-BaseButton.propTypes = {
-  onClick: PropTypes.bool,
-};
-BaseButton.propTypes = {
-  theme: PropTypes.node,
-};
-BaseButton.propTypes = {
-  size: PropTypes.node,
+  onClick: PropTypes.func,
+  theme: PropTypes.string,
+  size: PropTypes.string,
+  className: PropTypes.string,
 };
