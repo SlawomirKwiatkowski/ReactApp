@@ -3,15 +3,26 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  
-  img {
-    max-width: 100%;
-    display: block;
-    margin-left: auto;
-    margin-right: 10%;
-    width: 60%;
-    height: auto;
+}
+
+.imgWrapper {
+  width: 60%;
+  margin-left: auto;
+  margin-right: 10%;
+
+  > div {
+    position: relative;
+    padding-top: 61%;
   }
+}
+
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
   
 .officeNav {

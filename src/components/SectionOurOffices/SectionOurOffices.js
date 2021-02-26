@@ -34,11 +34,15 @@ const SectionOurOffices = () => {
 
   return (
     <div className={s.sectionOurOffice}>
+      <div className={s.imgWrapper}>
+        <div>
+          <img className={s.img} src={imgSrc} alt="Zurich image" />
+        </div>
+      </div>
       <nav className={s.officeNav}>
         <h3>Our Offices</h3>
         <ul>{places}</ul>
       </nav>
-      <img src={imgSrc} alt="Zurich image" />
 
       <BaseButton theme="primary" size="medium3" className={s.button}>
         Contact Us
