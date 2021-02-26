@@ -17,7 +17,7 @@ const ServicesPage = () => {
   return (
     <Default className="servicesPage">
       <DefaultBannerTop text={text} img={bannerServicesTop} />
-      <NavContent props={SectionItems} />
+      <NavContent navItems={SectionItems} />
       <ContentSection props={SectionItems[0]} />
       <ContentSection props={SectionItems[1]} />
       <Slogan />
