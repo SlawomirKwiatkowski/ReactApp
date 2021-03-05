@@ -2,7 +2,7 @@ import React from 'react';
 
 import SectionOurPromise from '../../components/SectionOurPromise/SectionOurPromise';
 import SectionOurServices from '../../components/SectionOurServices.js/SectionOurServices';
-import SectionOurOffices from '../../components/SectionOurOffices/SectionOurOffices2';
+import SectionOurOffices from '../../components/SectionOurOffices/SectionOurOffices';
 import SectionOurTeam from '../../components/SectionOurTeam/SectionOurTeam';
 import BannerBottom from '../../components/BannerBottom/BannerBottom';
 

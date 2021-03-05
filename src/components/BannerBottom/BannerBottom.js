@@ -1,7 +1,6 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 import PropTypes from 'prop-types';
-// import bannerBottom from '../../assets/img/bannerBottom.png';
 
 import b from './BannerBottom.module.scss';
 

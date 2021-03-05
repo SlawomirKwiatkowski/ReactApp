@@ -3,7 +3,7 @@ import { CSSTransition } from 'react-transition-group';
 
 import { NavLink } from 'react-router-dom';
 import { HeaderItems } from './HeaderItems';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 import logo from '../../assets/img/logo.svg';
 
 import s from './Header.module.scss';

@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 
 import s from './SectionOurPromise.module.scss';
 

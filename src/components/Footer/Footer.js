@@ -1,7 +1,7 @@
 import React from 'react';
 import { TiSocialLinkedinCircular } from 'react-icons/ti';
 
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 
 import logo from '../../assets/img/logo.svg';
 import FooterContactList from './FooterContactList';

@@ -2,25 +2,17 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import SectionItems from './SectionOurOfficesItems';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 
 import ZurichImg from '../../assets/img/Zurich.png';
-
 import s from './SectionOurOffices.module.scss';
 
 const SectionOurOffices = () => {
-  const [imgSrc, setImgSrc] = useState(ZurichImg);
-  const [click, setClick] = useState(false);
+  const [prevImg, setPrevImg] = useState(ZurichImg);
+  const [currentImg, setCurrentImage] = useState(ZurichImg);
   const [activeOffice, setActiveOffice] = useState('Zurich');
-
-  const handleClick = (img, title) => {
-    console.log(img, click);
-    setActiveOffice(title);
-    setImgSrc(img);
-    setClick(true);
-    console.log(click);
-    console.log(activeOffice);
-  };
+  const [second, setSecond] = useState(false);
+  const [first, setFirst] = useState(true);
 
   const places = SectionItems.map((item) => (
     <li
@@ -38,27 +30,63 @@ const SectionOurOffices = () => {
     </li>
   ));
 
+  const handleClick = (img1, title) => {
+    if (first) {
+      setFirst(false);
+      setCurrentImage(img1);
+    } else {
+      setSecond(false);
+      setPrevImg(img1);
+    }
+    setActiveOffice(title);
+  };
+
   return (
     <div className={s.sectionOurOffice}>
       <CSSTransition
-        in={click}
-        appear={true}
-        timeout={10000}
+        in={first}
+        timeout={{
+          enter: 500,
+          exit: 400,
+        }}
+        unmountOnExit={true}
+        mountOnEnter={true}
+        enter={true}
+        onExited={() => (setSecond(true), console.log('wpierwszym odmontowanym: ', prevImg))}
         classNames={{
           enterActive: s['fadeEnterActive'],
           enter: s['fadeEnter'],
           exitActive: s['fadeExit'],
           exit: s['fadeExitActive'],
-          appear: s['fadeApear'],
-          appearActive: s['fadeAppearActive'],
-        }}
-        onEntered={() => setClick(false)}>
+        }}>
         <div className={s.imgWrapper}>
           <div>
-            <img className={s.img} src={imgSrc} key={imgSrc} alt="Zurich image" />
+            <img className={s.img} src={prevImg} key={prevImg} alt="Zurich image" />
           </div>
         </div>
       </CSSTransition>
+      <CSSTransition
+        in={second}
+        mountOnEnter={true}
+        unmountOnExit={true}
+        onExited={() => (setFirst(true), console.log('w drugim odmontowanym', currentImg))}
+        timeout={{
+          enter: 500,
+          exit: 400,
+        }}
+        classNames={{
+          enterActive: s['fadeEnterActive'],
+          enter: s['fadeEnter'],
+          exitActive: s['fadeExit'],
+          exit: s['fadeExitActive'],
+        }}>
+        <div className={s.imgWrapper}>
+          <div>
+            <img className={s.img} src={currentImg} key={currentImg} alt="Zurich image" />
+          </div>
+        </div>
+      </CSSTransition>
+
       <nav className={s.officeNav}>
         <h3>Our Offices</h3>
         <ul>{places}</ul>

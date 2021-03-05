@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 // import { NavLink } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 import { ButtonItems } from 'components/ContentSection/ButtonItems';
 
 import s from './ContentSection.module.scss';

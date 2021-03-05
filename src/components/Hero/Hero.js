@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 import classnames from "classnames";
 import s from './Hero.module.scss';
 

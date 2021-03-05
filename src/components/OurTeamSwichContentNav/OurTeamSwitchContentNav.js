@@ -6,12 +6,6 @@ import s from 'components/OurTeamSwichContentNav/OurTeamSwitchContentNav.module.
 const Cities = ['Zurich', 'Nicosia', 'Panama City'];
 
 const OurTeamSwitchContentNav = () => {
-  // const list = Cities.map(city=>{
-  //     <li key={city}>
-  //         <Link to={`/team/${city}`}>{city}</Link>
-  //     </li>
-  // })
-
   return (
     <div className={s.teamSwitchContent}>
       {Cities.map((city) => {

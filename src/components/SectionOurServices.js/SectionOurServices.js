@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 
 import s from './SectionOurServices.module.scss';
 
@@ -8,7 +8,6 @@ const SectionOurServices = () => {
   return (
     <div className={s.sectionOurServices}>
       <div className={s.sectionOurServicesLeft}>
-        {/* <hr /> */}
         <h1 style={{ float: 'left' }}>Our services</h1>
       </div>
       <div className={s.sectionOurServicesRight}>

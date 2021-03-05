@@ -1,5 +1,5 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton';
+import { BaseButton } from '../BaseButton/BaseButton';
 import ourTeam from '../../assets/img/OurTeam.png';
 import s from './SectionOurTeam.module.scss';
 
