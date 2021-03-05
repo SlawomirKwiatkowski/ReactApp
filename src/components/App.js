@@ -2,13 +2,13 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import './App.css';
 import React, { Component } from 'react';
-// import BannerHero from "./BannerHero";
-// import Content from "./Content/Content";
-// import Footer from "./Footer/Footer";
+
 import HomePage from '../pages/HomePage/HomePage';
 import ServicesPage from '../pages/ServicesPage/ServicesPage';
 import OurTeamPage from '../pages/OurTeamPage/OurTeamPage';
-// import BannerBottom from './Content/BannerBottom';
+import ContactUsPage from 'pages/ContactUs/ContactUsPage';
+import AboutUsPage from 'pages/AboutUsPage/AboutUsPage';
+import LocationsPage from 'pages/LocationsPage/LocationsPage';
 
 class App extends Component {
   render() {
@@ -19,17 +19,10 @@ class App extends Component {
             <Route path="/" exact component={HomePage} />
             <Route path="/services" component={ServicesPage} />
             <Route path="/team" component={OurTeamPage} />
+            <Route path="/contactUs" component={ContactUsPage} />
+            <Route path="/aboutUs" component={AboutUsPage} />
+            <Route path="/locations" component={LocationsPage} />
           </Switch>
-          {/* <header>
-            <BannerHero />
-          </header>
-          <main>
-            <Content />
-          </main>
-          <footer>
-            <Footer />
-          </footer>
-         */}
         </Router>
       </div>
     );

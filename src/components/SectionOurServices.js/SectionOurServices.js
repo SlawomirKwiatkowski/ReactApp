@@ -14,7 +14,11 @@ const SectionOurServices = () => {
       <div className={s.sectionOurServicesRight}>
         <h2>
           <h3 style={{ float: 'left' }}>For private client</h3>
-          <BaseButton style={{ float: 'left' }} theme="empty" size="small2" className={s.button}>
+          <BaseButton
+            style={{ float: 'left' }}
+            theme="arrowbutton"
+            size="small2"
+            className={s.button}>
             <span>&#8594;</span>
           </BaseButton>
         </h2>

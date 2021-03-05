@@ -35,7 +35,7 @@ const Footer = () => {
       <div className={f.row2}>
         <TiSocialLinkedinCircular
           size={45}
-          style={{ fill: '#C5AD8F', padding: '0', paddingTop: '5px' }}
+          style={{ fill: '#C5AD8F', padding: '0', paddingTop: '0px' }}
         />
         <h1>Imprint</h1>
         <h1>GTC</h1>

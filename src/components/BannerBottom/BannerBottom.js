@@ -5,8 +5,7 @@ import PropTypes from 'prop-types';
 
 import b from './BannerBottom.module.scss';
 
-const BannerBottom = ({ img, imgDsc, text, textButton }) => {
-  console.log(img);
+const BannerBottom = ({ img, imgDsc, text, textButton, style }) => {
   if (!text) {
     return (
       <div className={b.bannerBottom}>
@@ -19,7 +18,7 @@ const BannerBottom = ({ img, imgDsc, text, textButton }) => {
     return (
       <div className={b.bannerBottom}>
         <div className={b.container}>
-          <img src={img} alt={imgDsc} />
+          <img src={img} alt={imgDsc} style={style} />
         </div>
 
         <div className={b.bannerInner}>
@@ -38,6 +37,7 @@ BannerBottom.propTypes = {
   text: PropTypes.string,
   textButton: PropTypes.string,
   imgDsc: PropTypes.string,
+  style: PropTypes.arrayOf(PropTypes.string),
 };
 
 export default BannerBottom;

@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import SectionItems from './SectionOurOfficesItems';
 import { BaseButton } from '../BaseButton';
 
 import ZurichImg from '../../assets/img/Zurich.png';
 
-// import './content.scss';
 import s from './SectionOurOffices.module.scss';
 
 const SectionOurOffices = () => {
   const [imgSrc, setImgSrc] = useState(ZurichImg);
+  const [click, setClick] = useState(false);
+  const [activeOffice, setActiveOffice] = useState('Zurich');
 
-  const handleClick = (img) => {
-    console.log(img);
+  const handleClick = (img, title) => {
+    console.log(img, click);
+    setActiveOffice(title);
     setImgSrc(img);
+    setClick(true);
+    console.log(click);
+    console.log(activeOffice);
   };
 
   const places = SectionItems.map((item) => (
     <li
       key={item.title}
       onClick={() => {
-        handleClick(item.img);
+        handleClick(item.img, item.title);
       }}>
       <a>
-        <div className={s.cityList}>
+        <div className={item.title == activeOffice ? s.cityListActive : s.cityList}>
           <span>{item.title}</span>
 
           {item.country}
@@ -34,11 +40,25 @@ const SectionOurOffices = () => {
 
   return (
     <div className={s.sectionOurOffice}>
-      <div className={s.imgWrapper}>
-        <div>
-          <img className={s.img} src={imgSrc} alt="Zurich image" />
+      <CSSTransition
+        in={click}
+        appear={true}
+        timeout={10000}
+        classNames={{
+          enterActive: s['fadeEnterActive'],
+          enter: s['fadeEnter'],
+          exitActive: s['fadeExit'],
+          exit: s['fadeExitActive'],
+          appear: s['fadeApear'],
+          appearActive: s['fadeAppearActive'],
+        }}
+        onEntered={() => setClick(false)}>
+        <div className={s.imgWrapper}>
+          <div>
+            <img className={s.img} src={imgSrc} key={imgSrc} alt="Zurich image" />
+          </div>
         </div>
-      </div>
+      </CSSTransition>
       <nav className={s.officeNav}>
         <h3>Our Offices</h3>
         <ul>{places}</ul>

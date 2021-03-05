@@ -8,32 +8,33 @@
   width: 50%;
   padding-right: 15%;
   padding-top: 65px;
-
-  h1 {
-    width: 80%;
-    padding: 0;
-    font-weight: 600;
-    padding-top: 30px;
-    border-top: 1px solid #c5ad8f;
-  }
+}
+.h1 {
+  font-size: 40px;
+line-height: 48px;
+  width: 80%;
+  padding: 0;
+  font-weight: 400;
+  padding-top: 30px;
+  border-top: 1px solid #c5ad8f;
 }
 .contentSectionRight {
   width: 50%;
 }
 
+.h2 {
+  padding-top: 50px;
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 400;
+}
 .contentSectionRightText {
-  padding-bottom: 5%;
-  h2 {
-    padding-top: 50px;
-    font-size: 24px;
-    font-weight: 500;
-  }
-
-  h3 {
-    padding-top: 20px;
-    font-size: 18px;
-    font-weight: 400;
-  }
+  padding-bottom: 5%; 
+}
+.h3 {
+  padding-top: 20px;
+  font-size: 18px;
+  font-weight: 400;
 }
 .contentSectionRightButton {
   h4 {
@@ -45,13 +46,60 @@
     padding: 20px;
     margin-top: 10px;
     font-weight: 600;
-    h5 {
-      margin-left: auto;
-      span {
-        font-size: 26px;
-        font-weight: 600;
-      }
-    }
   }
 }
+.button{
+  margin: 0;
+  margin-left: auto;
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+}
+.buttonMenu{
+  display: none;
+}
+.buttonMenuActive{
+  position: relative;
+  background-color: #f3efe8;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  opacity: 1;
+  z-index: 1;
+}
+.buttonLinksActive{
+  // border-top: black 1px solid;
+  padding: 20px;
+  font-weight: 400;
+  font-size: 20px;
+}
+.buttonLinks{
+  display: none;
+}
+
+
+.fadeEnter {
+  .buttonLinksActive{
+    opacity: 0;
+  }
+  height: 0;
+}
+.fadeEnterActive {
+  .buttonLinksActive{
+    opacity: 1;
+    transition: opacity  100ms linear 300ms;
+  }
+  height: 240px;
+  transition: height 300ms linear ;
   
+}
+.fadeExit{
+  height: 240px;
+  
+}
+.fadeExitActive{
+  height: 0px;
+  transition: height 400ms linear;
+} 

@@ -17,8 +17,11 @@ const SectionOurTeam = () => {
           Our team
         </BaseButton>
       </div>
-
-      <img src={ourTeam} alt="Our Team image" />
+      <div className={s.imgWrapper}>
+        <div>
+          <img src={ourTeam} alt="Our Team image" />
+        </div>
+      </div>
     </section>
   );
 };

@@ -12,6 +12,8 @@
   // }
 
   h1 {
+    font-size: 45px;
+    line-height: 54px;
     border-top: 1px solid #C5AD8F;
     padding-top: 20px;
     color: black;
@@ -23,6 +25,7 @@
   flex-direction: column;
 
   h1 {
+    
     border-top: 1px solid red;
     font-weight: normal;
     color: black;
@@ -37,13 +40,14 @@
     background-color: #f3efe8;
   }
   h3 {
-    font-weight: normal;
-    font-size: 24px;
+    font-size: 28px;
+    line-height: 34px;
     text-align: left;
     margin: 0;
     color: black;
   }
 }
 .button{
+  color: black;
   
 }

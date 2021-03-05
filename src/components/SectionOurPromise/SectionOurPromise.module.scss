@@ -1,20 +1,27 @@
 .sectionOurPromise {
   padding-top: 10%;
-  padding-left: 40%;
+  padding-left: 35%;
   padding-right: 15%;
   
-  h1 {
-  font-weight: normal;
-  color: black;
-  }
+  
 
   h2 {
-  padding-bottom: 2%;
+  
+  font-style: normal;
   font-weight: normal;
+  font-size: 26px;
+  line-height: 37px;
   color: black;
+  padding-bottom: 26px;
 
   }
 }
+.h1 {
+  padding-bottom: 20px;
+  font-weight: 400;
+  font-size: 45px;
+  color: black;
+  }
 .button{
   position: inherit;
 }

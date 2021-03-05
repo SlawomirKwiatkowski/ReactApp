@@ -2,7 +2,7 @@ import React from 'react';
 
 import SectionOurPromise from '../../components/SectionOurPromise/SectionOurPromise';
 import SectionOurServices from '../../components/SectionOurServices.js/SectionOurServices';
-import SectionOurOffices from '../../components/SectionOurOffices/SectionOurOffices';
+import SectionOurOffices from '../../components/SectionOurOffices/SectionOurOffices2';
 import SectionOurTeam from '../../components/SectionOurTeam/SectionOurTeam';
 import BannerBottom from '../../components/BannerBottom/BannerBottom';
 
@@ -13,7 +13,9 @@ import bannerBottom from '../../assets/img/bannerBottom.png';
 
 const text = 'Lorem ipsum dolor sit amert';
 const textButton = 'Lorem';
-
+const styleBannerBottom = {
+  bottom: '100px',
+};
 const HomePage = () => {
   return (
     <Default className="homePage">
@@ -29,6 +31,7 @@ const HomePage = () => {
           imgDsc={'People in car image'}
           text={text}
           textButton={textButton}
+          style={styleBannerBottom}
         />
       </main>
     </Default>

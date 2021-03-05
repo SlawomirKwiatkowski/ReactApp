@@ -25,4 +25,9 @@ export const HeaderItems = [
     url: '/locations',
     cName: 'n.navLinks',
   },
+  {
+    title: 'Contact us',
+    url: '/contactUs',
+    cName: 'n.navLinksMobile',
+  },
 ];

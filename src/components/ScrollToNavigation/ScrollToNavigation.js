@@ -1,32 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import s from './NavContent.module.scss';
+import s from './ScrollToNavigation.module.scss';
 
-const NavContent = ({ navItems }) => {
+const ScrollToNavigation = ({ navItems }) => {
   return (
     <div className={s.navPanel}>
       {navItems.map((item) => (
-        <a href={item.title} key={item.id}>
+        <a className={s.link} href={'#' + item.title} key={item.id}>
           {item.title}
         </a>
       ))}
-
-      <h1>
-        Trust & Estate
-        <br /> Planning
-      </h1>
-      <h1>
-        Citizenship &<br /> Residency Options
-      </h1>
-      <h1>
-        Family Office
-        <br /> Service
-      </h1>
     </div>
   );
 };
-NavContent.propTypes = {
+ScrollToNavigation.propTypes = {
   navItems: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number,
@@ -39,4 +27,4 @@ NavContent.propTypes = {
   ),
 };
 
-export default NavContent;
+export default ScrollToNavigation;

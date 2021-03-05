@@ -11,7 +11,7 @@
     height: auto;
     background-size:cover;
     position: relative ;
-    bottom: 100px;
+    // bottom: 100px;
     mask-image:rgba(46, 51, 53, 0.5) ;
     z-index: -1;
   }
@@ -21,9 +21,11 @@
   position: absolute;
   top:250px;
   left:160px;
-  width: 250px;
+  width: 350px;
 
   h1{
+    font-size: 45px;
+    line-height: 54px;
     line-height: 1.4;
     padding: 0;
     color: #FFFFFF ;
