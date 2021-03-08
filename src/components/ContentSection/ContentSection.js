@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { CSSTransition } from 'react-transition-group';
 
 import { BaseButton } from '../BaseButton/BaseButton';
-import { ButtonItems } from 'components/ContentSection/ButtonItems';
+import { ButtonItems } from 'src/components/ContentSection/ButtonItems';
 
 import s from './ContentSection.module.scss';
 

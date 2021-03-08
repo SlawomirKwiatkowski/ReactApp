@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-import s from 'components/OurTeamSwichContentNav/OurTeamSwitchContentNav.module.scss';
+import s from 'src/components/OurTeamSwichContentNav/OurTeamSwitchContentNav.module.scss';
 
 const Cities = ['Zurich', 'Nicosia', 'Panama City'];
 

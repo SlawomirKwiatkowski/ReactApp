@@ -4,12 +4,12 @@ import Default from '../../templates/Default';
 import DefaultBannerTop from '../../components/DefaultBannerTop/DefaultBannerTop';
 import TeamMember from '../../components/TeamMember/TeamMember';
 import BannerBottom from '../../components/BannerBottom/BannerBottom';
-import OurTeamSwitchContentNav from 'components/OurTeamSwichContentNav/OurTeamSwitchContentNav';
+import OurTeamSwitchContentNav from 'src/components/OurTeamSwichContentNav/OurTeamSwitchContentNav';
 import { Switch, Route } from 'react-router-dom';
 
 import OurTeamBannerBottom from '../../assets/img/OurTeamBannerBottom.png';
 import OurTeamBanner from '../../assets/img/OurTeamBanner.png';
-// import { TeamMemberItems } from 'components/TeamMember/TeamMemberItems';
+// import { TeamMemberItems } from 'src/components/TeamMember/TeamMemberItems';
 const OurTeamPage = () => {
   const textBannerTop = 'Our Team';
   const styleBannerTop = {
