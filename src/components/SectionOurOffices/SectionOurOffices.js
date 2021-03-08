@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
-import SectionItems from './SectionOurOfficesItems';
+import { offices } from 'src/mocks/offices';
 import { BaseButton } from '../BaseButton/BaseButton';
 
 import ZurichImg from '../../assets/img/Zurich.png';
@@ -14,7 +14,7 @@ const SectionOurOffices = () => {
   const [second, setSecond] = useState(false);
   const [first, setFirst] = useState(true);
 
-  const places = SectionItems.map((item) => (
+  const places = offices.map((item) => (
     <li
       key={item.title}
       onClick={() => {
