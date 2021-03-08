@@ -3,6 +3,7 @@ import React from 'react';
 import SectionOurPromise from '../../components/SectionOurPromise/SectionOurPromise';
 import SectionOurServices from '../../components/SectionOurServices.js/SectionOurServices';
 import SectionOurOffices from '../../components/SectionOurOffices/SectionOurOffices';
+import { SectionOurOfficesBetter } from 'src/components/SectionOurOfficesBetter/SectionOurOfficesBetter';
 import SectionOurTeam from '../../components/SectionOurTeam/SectionOurTeam';
 import BannerBottom from '../../components/BannerBottom/BannerBottom';
 
@@ -25,6 +26,7 @@ const HomePage = () => {
         <SectionOurPromise />
         <SectionOurServices />
         <SectionOurOffices />
+        <SectionOurOfficesBetter />
         <SectionOurTeam />
         <BannerBottom
           img={bannerBottom}
