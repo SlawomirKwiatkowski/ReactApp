@@ -9,16 +9,6 @@ import FooterContactList from './FooterContactList';
 import f from './Footer.module.scss';
 
 const Footer = () => {
-  const places = FooterContactList.map((item) => (
-    <ul key={item.city} className={f.contactAddress}>
-      <h2>{item.city}</h2>
-      <h3>{item.address}</h3>
-      <h4>
-        {item.mail} <br /> {item.phoneNumber}
-      </h4>
-    </ul>
-  ));
-
   return (
     <footer className={f.container}>
       <div className={f.row}>
@@ -30,7 +20,15 @@ const Footer = () => {
           </BaseButton>
         </ul>
 
-        {places}
+        {FooterContactList.map((item) => (
+          <ul key={item.city} className={f.contactAddress}>
+            <h2>{item.city}</h2>
+            <h3>{item.address}</h3>
+            <h4>
+              {item.mail} <br /> {item.phoneNumber}
+            </h4>
+          </ul>
+        ))}
       </div>
       <div className={f.row2}>
         <TiSocialLinkedinCircular
