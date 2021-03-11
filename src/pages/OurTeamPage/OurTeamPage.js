@@ -1,16 +1,15 @@
 import React from 'react';
 
-import Default from '../../templates/Default';
-import DefaultBannerTop from '../../components/DefaultBannerTop/DefaultBannerTop';
-import TeamMember from '../../components/TeamMember/TeamMember';
-import BannerBottom from '../../components/BannerBottom/BannerBottom';
-import OurTeamSwitchContentNav from 'src/components/OurTeamSwichContentNav/OurTeamSwitchContentNav';
+import { Default } from 'src/templates/Default';
+import { DefaultBannerTop } from 'src/components/DefaultBannerTop/DefaultBannerTop';
+import TeamMember from 'src/components/TeamMember/TeamMember';
+import { BannerBottom } from 'src/components/BannerBottom/BannerBottom';
+import { OurTeamSwitchContentNav } from 'src/components/OurTeamSwichContentNav/OurTeamSwitchContentNav';
 import { Switch, Route } from 'react-router-dom';
 
-import OurTeamBannerBottom from '../../assets/img/OurTeamBannerBottom.png';
-import OurTeamBanner from '../../assets/img/OurTeamBanner.png';
-// import { TeamMemberItems } from 'src/components/TeamMember/TeamMemberItems';
-const OurTeamPage = () => {
+import OurTeamBannerBottom from 'src/assets/img/OurTeamBannerBottom.png';
+import OurTeamBanner from 'src/assets/img/OurTeamBanner.png';
+export const OurTeamPage = () => {
   const textBannerTop = 'Our Team';
   const styleBannerTop = {
     background: `url("${OurTeamBanner}")`,
@@ -56,5 +55,3 @@ const OurTeamPage = () => {
     </Default>
   );
 };
-
-export default OurTeamPage;

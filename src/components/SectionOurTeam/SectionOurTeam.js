@@ -1,11 +1,13 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton/BaseButton';
-import ourTeam from '../../assets/img/OurTeam.png';
+import classnames from 'classnames';
+
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
+import ourTeam from 'src/assets/img/OurTeam.png';
 import s from './SectionOurTeam.module.scss';
 
 const SectionOurTeam = () => {
   return (
-    <section className={s.sectionOurTeam}>
+    <section className={classnames('container', s.sectionOurTeam)}>
       <div className={s.text}>
         <h1>Met our dedicated Team.</h1>
 
@@ -13,7 +15,7 @@ const SectionOurTeam = () => {
           Lorem ipsum dolor sit amet, consectuer adpiscing elit, sed dam nonummy nibh euismod
           tincidunt.
         </h2>
-        <BaseButton theme="primary" size="medium">
+        <BaseButton theme="primary" size="small4">
           Our team
         </BaseButton>
       </div>

@@ -1,3 +1,5 @@
+@import '../../assets/styles/variable.module.scss';
+
 .sectionOurOffice {
   position: relative;
   width: 100%;
@@ -24,21 +26,18 @@
   height: 100%;
   object-fit: cover;
 }
-  
+
 .officeNav {
   padding: 4%;
   position: absolute;
   width: 25%;
   top: 80%;
   left: 25%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: blue;
-  background-color: #21394f;
+  background-color: $cloud-burst;
 
   a {
     cursor: pointer;
-    color: white;
+    color: $color-white;
     opacity: 50%;
     display: inline;
     display: block;
@@ -47,60 +46,54 @@
     font-weight: bold;
     transition: 0.2s;
 
-    :visited{
+    :visited {
       color: black;
       opacity: 100%;
     }
 
-    :hover{
-      color: white;
+    :hover {
+      color: $color-white;
       opacity: 100%;
     }
 
     :active {
-      color: rgb(196, 17, 17);
       opacity: 50%;
     }
-    span{
+    span {
       font-size: 22px;
       margin-right: 15px;
-
     }
   }
   h3 {
-      line-height: 1.5;
-      padding-bottom: 3%;
-      color: #c5ad8f;
-      font-size: 1.8rem;
-    }
+    line-height: 1.5;
+    padding-bottom: 3%;
+    color: $color-indian-khaki;
+    font-size: 1.8rem;
+  }
   ul {
-      list-style-type: none;
-      font-size: 14px;
-      margin: 0;
-      padding: 0;
-    }
+    list-style-type: none;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+  }
   li {
-      padding-top: 4%;
-      list-style: none;
-    }
-    
-  }  
-.button{
+    padding-top: 4%;
+    list-style: none;
+  }
+}
+.button {
   position: absolute;
   top: 80%;
-  left: 75%; 
+  left: 75%;
 }
-.cityList{
-  color: white;
-  opacity:50%;
-
+.cityList {
+  color: $color-white;
+  opacity: 50%;
 }
-.cityListActive{
-  color: white;
-  opacity:100%;
-
+.cityListActive {
+  color: $color-white;
+  opacity: 100%;
 }
-
 
 .fadeEnter {
   opacity: 0;
@@ -111,10 +104,10 @@
   transition: opacity 500ms linear;
 }
 
-.fadeExit{
-  opacity:1;
+.fadeExit {
+  opacity: 1;
 }
-.fadeExitActive{
+.fadeExitActive {
   opacity: 0;
   transition: opacity 400ms linear;
 }

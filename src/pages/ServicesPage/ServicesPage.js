@@ -1,16 +1,16 @@
 import React from 'react';
-import DefaultBannerTop from '../../components/DefaultBannerTop/DefaultBannerTop';
-import Default from '../../templates/Default';
+import { DefaultBannerTop } from 'src/components/DefaultBannerTop/DefaultBannerTop';
+import { Default } from 'src/templates/Default';
 
-import ScrollToNavigation from '../../components/ScrollToNavigation/ScrollToNavigation';
-import ContentSection from '../../components/ContentSection/ContentSection';
-import Slogan from './Slogan';
-import { SectionItems } from '../../components/ContentSection/SectionItems';
-import bannerServicesTop from '../../assets/img/OurServicesBanner.png';
-import BannerBottom from '../../components/BannerBottom/BannerBottom';
-import './Content.scss';
+import { ScrollToNavigation } from 'src/components/ScrollToNavigation/ScrollToNavigation';
+import { ContentSection } from 'src/components/ContentSection/ContentSection';
+import Slogan from 'src/components/Slogan/Slogan';
+import { SectionItems } from 'src/mocks/SectionItems';
+import bannerServicesTop from 'src/assets/img/OurServicesBanner.png';
+import { BannerBottom } from 'src/components/BannerBottom/BannerBottom';
+import s from './ServicesPage.module.scss';
 
-import ServicesBannerBottom from '../../assets/img/ServicesBannerBottom.png';
+import ServicesBannerBottom from 'src/assets/img/ServicesBannerBottom.png';
 const text = 'Services For institutional Clients';
 const style = {
   background: `url("${bannerServicesTop}")`,
@@ -18,10 +18,9 @@ const style = {
   backgroundPosition: '0% 60%',
 };
 
-const ServicesPage = () => {
+export const ServicesPage = () => {
   return (
-    <Default className="servicesPage">
-      {/* <DefaultBannerTop text={text} img={bannerServicesTop} style={style} /> */}
+    <Default className={s.servicesPage}>
       <DefaultBannerTop text={text} style={style} />
       <ScrollToNavigation navItems={SectionItems} />
       <ContentSection props={SectionItems[0]} />
@@ -32,5 +31,3 @@ const ServicesPage = () => {
     </Default>
   );
 };
-
-export default ServicesPage;

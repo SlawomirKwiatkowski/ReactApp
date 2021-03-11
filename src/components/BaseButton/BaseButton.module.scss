@@ -1,31 +1,31 @@
-$btn-base-color: #C5AD8F;
+@import '../../assets/styles/variable.module.scss';
+
 .btn {
   cursor: pointer;
   font-size: 2rem;
-  font-family: "Times New Roman", serif;
+  font-family: 'Times New Roman', serif;
 }
 .theme-primary {
   border-radius: 2em;
   text-align: center;
-  background: #c5ad8f;
-  color: #fff;
+  background: $color-indian-khaki;
+  color: $color-white;
   outline: none;
   border: none;
   cursor: pointer;
 }
 
 .theme-empty {
-  background-color: white;
-  :focus{
-    border:none;
+  background-color: $color-white;
+  :focus {
+    border: none;
     outline: none;
     border: none;
     cursor: pointer;
   }
-
 }
-.theme-empty2{
-  background-color: $btn-base-color;
+.theme-empty2 {
+  background-color: $color-indian-khaki;
   outline: none;
   border: none;
   border-radius: 2em;
@@ -33,38 +33,32 @@ $btn-base-color: #C5AD8F;
 
 .theme-onbanner {
   background-color: transparent;
-  color: #c5ad8f;
-  border: 2px solid #c5ad8f;
+  color: $color-indian-khaki;
+  border: 2px solid $color-indian-khaki;
   border-radius: 2em;
   cursor: pointer;
 }
 .theme-arrowbutton {
-  background-color: white;
-  border: 2px solid black;
+  background-color: $color-white;
+  border: 2px solid $color-black;
 }
 
 .size-medium {
-  padding: 0px 10px 0px 10px;
-  height: 50px ;
-  width: 15vw;
-  min-width: 140px;
-  max-width: 250px;
+  height: 50px;
+  min-width: 170px;
+  padding: 0 40px;
 }
 
 .size-medium2 {
   height: 43px;
   padding: 0px 10px 0px 10px;
-  min-width: 164px;
-  width: 15vw;
+  min-width: 165px;
 }
-.size-medium3{
+.size-medium3 {
   flex: auto;
   padding: 10px 22px;
-  width: 10vw;
-  height: 43px;
-  max-height: 60px;
-  min-width: 140px;
-  max-width: 200px;
+  height: 45px;
+  min-width: 150px;
 }
 
 .size-small {
@@ -88,4 +82,10 @@ $btn-base-color: #C5AD8F;
   border-radius: 50%;
   margin-right: auto;
   margin-left: 10%;
+}
+
+.size-small4 {
+  min-width: 125px;
+  height: 45px;
+  padding: 0 25px;
 }

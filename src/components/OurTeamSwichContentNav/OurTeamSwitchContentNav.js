@@ -1,13 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import classnames from 'classnames';
 
-import s from 'src/components/OurTeamSwichContentNav/OurTeamSwitchContentNav.module.scss';
+import s from './OurTeamSwitchContentNav.module.scss';
 
 const Cities = ['Zurich', 'Nicosia', 'Panama City'];
 
-const OurTeamSwitchContentNav = () => {
+export const OurTeamSwitchContentNav = () => {
   return (
-    <div className={s.teamSwitchContent}>
+    <div className={classnames('container', s.teamSwitchContent)}>
       {Cities.map((city) => {
         return (
           <li key={city} className={s.link}>
@@ -18,5 +19,3 @@ const OurTeamSwitchContentNav = () => {
     </div>
   );
 };
-
-export default OurTeamSwitchContentNav;

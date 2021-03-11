@@ -1,34 +1,28 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton/BaseButton';
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import b from './BannerBottom.module.scss';
 
-const BannerBottom = ({ img, imgDsc, text, textButton, style }) => {
-  if (!text) {
-    return (
-      <div className={b.bannerBottom}>
-        <div className={b.container}>
-          <img src={img} alt={imgDsc} />
-        </div>
+export const BannerBottom = ({ img, imgDsc, text, textButton, style }) => {
+  return (
+    <div className={b.bannerBottom}>
+      <div className={b.container}>
+        <img src={img} alt={imgDsc} style={style} />
       </div>
-    );
-  } else {
-    return (
-      <div className={b.bannerBottom}>
-        <div className={b.container}>
-          <img src={img} alt={imgDsc} style={style} />
+      {text && (
+        <div className={'container'}>
+          <div className={b.bannerInner}>
+            <h1>{text}</h1>
+            <BaseButton theme="primary" size="medium" className={b.button}>
+              {textButton}
+            </BaseButton>
+          </div>
         </div>
-
-        <div className={b.bannerInner}>
-          <h1>{text}</h1>
-          <BaseButton theme="primary" size="medium" className={b.button}>
-            {textButton}
-          </BaseButton>
-        </div>
-      </div>
-    );
-  }
+      )}
+    </div>
+  );
 };
 
 BannerBottom.propTypes = {
@@ -38,5 +32,3 @@ BannerBottom.propTypes = {
   imgDsc: PropTypes.string,
   style: PropTypes.arrayOf(PropTypes.string),
 };
-
-export default BannerBottom;

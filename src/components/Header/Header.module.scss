@@ -1,31 +1,48 @@
-.NavbarItems {
+@import '../../assets/styles/variable.module.scss';
+
+.container {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 100;
+  height: 100px;
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  background-image: linear-gradient(to bottom, black, transparent 50%);
+  transition: background-position 1s;
+}
+.containerActive {
+  background-position: 0 0;
+}
+.NavbarItems {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 2rem;
   font-family: 'Times New Roman', serif;
-  background: linear-gradient(180deg, black, transparent);
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0%;
+  right: 0%;
 }
-  
+
 .navbarLogo {
   width: 250px;
-  color: #fff;
+  color: $color-white;
   margin-top: -5px;
   margin-right: auto;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
 }
-.menuIcon{
+.menuIcon {
   margin-left: auto;
   display: none;
-  color: white;
+  color: $color-white;
 }
 .navMenu {
   display: grid;
@@ -34,13 +51,12 @@
   list-style: none;
   text-align: center;
   list-style-type: none;
-  width: 90vw;
+  margin-left: auto;
   justify-content: end;
   margin-right: 20px;
-  
 }
 .navLinks {
-  color: #fff;
+  color: $color-white;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -48,99 +64,91 @@
   height: 100%;
   cursor: pointer;
 }
-  
-.emptyButton{
+
+.emptyButton {
   margin-right: 50px;
 }
 
-.button{
-  margin-right: 3% ;
+.button {
+  margin-right: 3%;
 }
 
-
-
-  @media(max-width:1100px){
-  .navbarItems{
-      position: relative;
-      display: flex;
-      flex-direction: row;
+@media (max-width: 1100px) {
+  .navbarItems {
+    position: relative;
+    display: flex;
+    flex-direction: row;
   }
-  .navbarLogo{
+  .navbarLogo {
     margin-right: auto;
   }
-  .navMenu{
+  .navMenu {
     display: none;
   }
- 
-  .navMenuActive{
+
+  .navMenuActive {
     position: relative;
-    margin-top: 320px;
+    margin-top: auto;
     width: 40%;
-    height: auto;
+    height: 350px;
     display: flex;
     flex-direction: column;
     list-style: none;
     background: rgba(0, 0, 0, 0.5);
     opacity: 1;
     z-index: 1;
-
-
   }
-  .navLinks{
+  .navLinks {
     text-align: center;
-    padding:25px;
+    padding: 25px;
     width: 100%;
     display: table;
   }
-  .menuIcon{
+  .menuIcon {
     cursor: pointer;
     margin-right: 30px;
     position: relative;
     display: flex;
-
   }
-  .navLinksMobile{
+  .navLinksMobile {
     display: block;
     text-align: center;
   }
-  .button{
-  display: none;
+  .button {
+    display: none;
   }
-  .emptyButton{
+  .emptyButton {
     display: none;
   }
 }
 
 .fadeEnter {
-  .navLinks{
- color:rgba(0, 0, 0, 0.5);
+  .navLinks {
+    opacity: 0;
   }
   width: 0;
   z-index: 0;
 }
 .fadeEnterActive {
-  .navLinks{
-    color: white;
-    transition: color 500ms cubic-bezier(0.5, 0, 0.75, 0);
-    }
+  .navLinks {
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.5, 0, 0.75, 0);
+  }
   width: 40%;
   transition: width 500ms linear;
-
 }
-.fadeExit{
-  .navLinks{
-    color: white;
-
-    }
+.fadeExit {
+  .navLinks {
+    opacity: 1;
+  }
   opacity: 1;
-  
 }
-.fadeExitActive{
-  .navLinks{
-    color:rgba(0, 0, 0, 0.5);
-    transition: color 300ms cubic-bezier(0.5, 0, 0.75, 0);
-     }
+.fadeExitActive {
+  .navLinks {
+    opacity: 0;
+    transition: opacity 200ms cubic-bezier(0.5, 0, 0.75, 0);
+  }
 
   width: 0;
   transition: width 400ms linear;
-} 
+}

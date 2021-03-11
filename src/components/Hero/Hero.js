@@ -1,12 +1,12 @@
 import React from 'react';
-import { BaseButton } from '../BaseButton/BaseButton';
-import classnames from "classnames";
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
+import classnames from 'classnames';
 import s from './Hero.module.scss';
 
-export default function Hero() {
+export function Hero() {
   return (
     <div className={s.hero}>
-      <div className={classnames("container", s.container)}>
+      <div className={classnames('container', s.container)}>
         <div className={s.banner}>
           <div className={s.bannerInner}>
             Keeping assets valuable. For you and for generations to come.

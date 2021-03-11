@@ -1,63 +1,58 @@
+@import 'src/assets/styles/variable.module.scss';
 
-
-.teamCollcectionList{
-    margin:2% 10% 2% 10%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
-    grid-gap: 70px;
-    grid-auto-flow: dense;
-    padding: 1rem;  
+.teamCollcectionList {
+  margin: 190px 50px 180px 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 70px;
+  grid-auto-flow: dense;
 }
-.teamCollectionItem{
-display: block;
-text-align: center;
-background-size: cover;
+.teamCollectionItem {
+  display: block;
+  text-align: center;
+  background-size: cover;
+  width: 330px;
 }
 
 .imgWrapper {
-    width: 100%;
-    margin-left: auto;
-    margin-right: 10%;
-  
-    > div {
-      position: relative;
-      padding-top: 150%;
-    }
+  width: 100%;
+  margin-left: auto;
+
+  > div {
+    position: relative;
+    padding-top: 150%;
   }
-  
-  .img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-.nameMember{
-    margin-left: 10px;
-    display: flex;
-    flex-direction: row;
-    color: #C5AD8F;
-    padding-top: 5px;
-    font-size: 22px;
-    font-weight: 400;
-
-}
-.nameMemberText{
-    text-align: left;
-    width: 50%;
-    
-
 }
 
-.icon{
-    padding-right:10px;
-    text-align: right;
-    width: 50%;
+.img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
-.positionMember{
-    margin-left: 10px;
-    text-align: left;
-    font-size: 22px;
-    text-transform: uppercase;
+.nameMember {
+  display: flex;
+  flex-direction: row;
+  color: $color-indian-khaki;
+  margin-top: 20px;
+  font-size: 22px;
+  font-weight: 400;
+}
+.nameMemberText {
+  text-align: left;
+  width: 50%;
+}
+
+.icon {
+  padding-right: 10px;
+  text-align: right;
+  width: 50%;
+}
+.positionMember {
+  margin-top: 10px;
+  text-align: left;
+  font-size: 22px;
+  text-transform: uppercase;
 }

@@ -2,12 +2,12 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import React, { Component } from 'react';
 
-import HomePage from '../pages/HomePage/HomePage';
-import ServicesPage from '../pages/ServicesPage/ServicesPage';
-import OurTeamPage from '../pages/OurTeamPage/OurTeamPage';
-import ContactUsPage from 'src/pages/ContactUs/ContactUsPage';
-import AboutUsPage from 'src/pages/AboutUsPage/AboutUsPage';
-import LocationsPage from 'src/pages/LocationsPage/LocationsPage';
+import { HomePage } from '../pages/HomePage/HomePage';
+import { ServicesPage } from '../pages/ServicesPage/ServicesPage';
+import { OurTeamPage } from '../pages/OurTeamPage/OurTeamPage';
+import { ContactUsPage } from 'src/pages/ContactUs/ContactUsPage';
+import { AboutUsPage } from 'src/pages/AboutUsPage/AboutUsPage';
+import { LocationsPage } from 'src/pages/LocationsPage/LocationsPage';
 
 class App extends Component {
   render() {

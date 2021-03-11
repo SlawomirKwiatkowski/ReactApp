@@ -1,27 +1,31 @@
-.teamSwitchContent{
-    display: flex;
-    flex-direction: row;
-    padding: 1%;
-    padding-left: 10%;
-    padding-right: 5%;
+@import '../../assets/styles/variable.module.scss';
 
-    background-color: #c5ad8f;
-    margin-right: 50%;
-    text-align: right;
+.teamSwitchContent {
+  display: flex;
+  flex-direction: row;
+  padding: 1%;
+  padding-left: 10%;
+  padding-right: 5%;
+  max-width: 720px;
+
+  background-color: $color-indian-khaki;
+  margin-right: 50%;
+  text-align: right;
 }
-.link, .link:visited  {
-    list-style: none;
-    font-size: 20px;
-    padding: 5%;
-    padding-left: 10%;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .link:hover {
-    text-decoration: underline;
-  }
-  
-  .link:active {
-    text-decoration: underline;
-  }
+.link,
+.link:visited {
+  list-style: none;
+  font-size: 20px;
+  padding: 5%;
+  padding-left: 10%;
+  color: $color-white;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}

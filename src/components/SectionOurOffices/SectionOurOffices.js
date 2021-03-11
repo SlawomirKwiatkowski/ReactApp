@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
 
 import { offices } from 'src/mocks/offices';
-import { BaseButton } from '../BaseButton/BaseButton';
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
 
-import ZurichImg from '../../assets/img/Zurich.png';
+import ZurichImg from 'src/assets/img/Zurich.png';
 import s from './SectionOurOffices.module.scss';
 
 const SectionOurOffices = () => {

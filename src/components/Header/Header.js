@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { CSSTransition } from 'react-transition-group';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
 import { NavLink } from 'react-router-dom';
-import { HeaderItems } from './HeaderItems';
-import { BaseButton } from '../BaseButton/BaseButton';
-import logo from '../../assets/img/logo.svg';
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
+import { BaseHamburger } from 'src/components/BaseHamburger/BaseHamburger';
+import logo from 'src/assets/img/logo.svg';
 
+import v from 'src/assets/styles/variable.module.scss';
 import s from './Header.module.scss';
 
-const Header = () => {
+export const Header = ({ HeaderItems }) => {
   const [menuClick, setMenuclick] = useState(false);
   const [showMenu, setShowMenu] = useState(false);
+  const [showMenuBg, setShowMenuBg] = useState(false);
   const handleMenuClick = () => {
     if (!menuClick) {
       setMenuclick(!menuClick);
@@ -19,21 +23,45 @@ const Header = () => {
       setShowMenu(false);
     }
   };
-  const handleResize = () => {
-    if (window.innerWidth > 1100) {
-      setMenuclick(false);
-    }
-  };
-  window.addEventListener('resize', handleResize);
+
+  useEffect(() => {
+    const handleResize = () => {
+      console.log('słucham');
+      if (window.innerWidth > 1100) {
+        setMenuclick(false);
+      }
+    };
+    window.addEventListener('resize', handleResize);
+    console.log('MOUNT');
+
+    return () => {
+      console.log('UNMOUNT');
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 600) {
+        setShowMenuBg(true);
+      } else {
+        setShowMenuBg(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <>
+    <div className={classnames(s.container, { [s.containerActive]: showMenuBg })}>
       <nav className={s.NavbarItems}>
-        <h1>
+        <NavLink to="/">
           <img src={logo} alt="logo" className={s.navbarLogo} />
-        </h1>
+        </NavLink>
         <div className={s.menuIcon} onClick={handleMenuClick}>
-          <i className={menuClick ? 'fas fa-times fa-2x' : 'fas fa-bars fa-2x'}></i>
+          <BaseHamburger open={showMenu} />
         </div>
         <CSSTransition
           in={showMenu}
@@ -73,8 +101,10 @@ const Header = () => {
           Contact Us
         </BaseButton>
       </nav>
-    </>
+    </div>
   );
 };
 
-export default Header;
+Header.propTypes = {
+  HeaderItems: PropTypes.arrayOf(PropTypes.string),
+};

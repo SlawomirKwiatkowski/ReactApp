@@ -1,8 +1,6 @@
 import React from 'react';
-import Default from '../../templates/Default';
+import { Default } from 'src/templates/Default';
 
-const LocationsPage = () => {
+export const LocationsPage = () => {
   return <Default className="OurTeamPage"></Default>;
 };
-
-export default LocationsPage;

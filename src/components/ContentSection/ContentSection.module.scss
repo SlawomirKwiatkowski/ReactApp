@@ -1,7 +1,9 @@
+@import '../../assets/styles/variable.module.scss';
+
 .contentSection {
   display: flex;
   flex-direction: row;
-  padding:5% 10% 5% 10%;
+  margin-top: 130px;
 }
 
 .contentSectionLeft {
@@ -11,12 +13,12 @@
 }
 .h1 {
   font-size: 40px;
-line-height: 48px;
+  line-height: 48px;
   width: 80%;
   padding: 0;
   font-weight: 400;
   padding-top: 30px;
-  border-top: 1px solid #c5ad8f;
+  border-top: 1px solid $color-indian-khaki;
 }
 .contentSectionRight {
   width: 50%;
@@ -24,16 +26,17 @@ line-height: 48px;
 
 .h2 {
   padding-top: 50px;
-  font-size: 22px;
-  line-height: 30px;
+  font-size: 24px;
+  line-height: 35px;
   font-weight: 400;
 }
 .contentSectionRightText {
-  padding-bottom: 5%; 
+  padding-bottom: 5%;
 }
 .h3 {
   padding-top: 20px;
   font-size: 18px;
+  line-height: 32px;
   font-weight: 400;
 }
 .contentSectionRightButton {
@@ -42,26 +45,26 @@ line-height: 48px;
     flex-direction: row;
     margin-right: auto;
     font-size: 24px;
-    background-color: #f3efe8;
+    background-color: $spring-wood;
     padding: 20px;
     margin-top: 10px;
     font-weight: 600;
   }
 }
-.button{
+.button {
   margin: 0;
   margin-left: auto;
-      span {
-        font-size: 20px;
-        font-weight: 600;
-      }
+  span {
+    font-size: 20px;
+    font-weight: 600;
+  }
 }
-.buttonMenu{
+.buttonMenu {
   display: none;
 }
-.buttonMenuActive{
+.buttonMenuActive {
   position: relative;
-  background-color: #f3efe8;
+  background-color: $spring-wood;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -69,36 +72,40 @@ line-height: 48px;
   opacity: 1;
   z-index: 1;
 }
-.buttonLinksActive{
+.buttonLinksActive {
   padding: 20px;
   font-weight: 400;
   font-size: 20px;
 }
-.buttonLinks{
+.buttonLinks {
   display: none;
 }
 
-
 .fadeEnter {
-  .buttonLinksActive{
+  .buttonLinksActive {
     opacity: 0;
   }
   height: 0;
 }
 .fadeEnterActive {
-  .buttonLinksActive{
+  .buttonLinksActive {
     opacity: 1;
-    transition: opacity  100ms linear 300ms;
+    transition: opacity 300ms linear 100ms;
   }
   height: 240px;
-  transition: height 300ms linear ;
-  
+  transition: height 300ms linear;
 }
-.fadeExit{
+.fadeExit {
+  .buttonLinksActive {
+    opacity: 1;
+  }
   height: 240px;
-  
 }
-.fadeExitActive{
+.fadeExitActive {
+  .buttonLinksActive {
+    opacity: 0;
+    transition: opacity 1000ms linear 300ms;
+  }
   height: 0px;
   transition: height 400ms linear;
-} 
+}

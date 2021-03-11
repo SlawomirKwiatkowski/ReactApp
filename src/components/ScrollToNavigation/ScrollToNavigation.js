@@ -1,11 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classnames from 'classnames';
 
 import s from './ScrollToNavigation.module.scss';
 
-const ScrollToNavigation = ({ navItems }) => {
+export const ScrollToNavigation = ({ navItems }) => {
   return (
-    <div className={s.navPanel}>
+    <div className={classnames('container', s.navPanel)}>
       {navItems.map((item) => (
         <a className={s.link} href={'#' + item.title} key={item.id}>
           {item.title}
@@ -26,5 +27,3 @@ ScrollToNavigation.propTypes = {
     }),
   ),
 };
-
-export default ScrollToNavigation;

@@ -1,8 +1,6 @@
 import React from 'react';
-import Default from '../../templates/Default';
+import { Default } from 'src/templates/Default';
 
-const ContactUsPage = () => {
+export const ContactUsPage = () => {
   return <Default className="OurTeamPage"></Default>;
 };
-
-export default ContactUsPage;

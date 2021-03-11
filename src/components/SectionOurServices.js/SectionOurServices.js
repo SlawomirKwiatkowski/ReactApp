@@ -1,12 +1,13 @@
 import React from 'react';
 
-import { BaseButton } from '../BaseButton/BaseButton';
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
+import classnames from 'classnames';
 
 import s from './SectionOurServices.module.scss';
 
-const SectionOurServices = () => {
+export const SectionOurServices = () => {
   return (
-    <div className={s.sectionOurServices}>
+    <div className={classnames('container', s.sectionOurServices)}>
       <div className={s.sectionOurServicesLeft}>
         <h1 style={{ float: 'left' }}>Our services</h1>
       </div>
@@ -36,5 +37,3 @@ const SectionOurServices = () => {
     </div>
   );
 };
-
-export default SectionOurServices;

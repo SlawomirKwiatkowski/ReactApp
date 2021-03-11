@@ -1,11 +1,5 @@
 export const HeaderItems = [
   {
-    title: 'Home',
-    url: '/',
-    cName: 'n.navLinks',
-    exact: true,
-  },
-  {
     title: 'Services',
     url: '/services',
     cName: 'n.navLinks',

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-// import { NavLink } from 'react-router-dom';
 import { CSSTransition } from 'react-transition-group';
 
-import { BaseButton } from '../BaseButton/BaseButton';
-import { ButtonItems } from 'src/components/ContentSection/ButtonItems';
+import { BaseButton } from 'src/components/BaseButton/BaseButton';
+import { ButtonItems } from 'src/mocks/ButtonItems';
 
 import s from './ContentSection.module.scss';
+import classnames from 'classnames';
 
-const ContentSection = ({ props }) => {
+export const ContentSection = ({ props }) => {
   const [click, setClick] = useState(false);
   const [showBtnMenu, setShowBtnMenu] = useState(false);
   const [entered, setEntered] = useState(false);
@@ -23,7 +23,7 @@ const ContentSection = ({ props }) => {
     }
   };
   return (
-    <div className={s.contentSection} id={props.title}>
+    <div className={classnames('container', s.contentSection)} id={props.title}>
       <div className={s.contentSectionLeft}>
         <h1 className={s.h1}>{props.title}</h1>
       </div>
@@ -95,5 +95,3 @@ ContentSection.propTypes = {
   firstButton: PropTypes.string,
   secondButton: PropTypes.string,
 };
-
-export default ContentSection;

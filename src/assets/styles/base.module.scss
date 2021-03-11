@@ -1,26 +1,29 @@
 @import './variable.module.scss';
 
-html {
-  font-size: 62.5%;
-  -ms-text-size-adjust: none;
-  -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+:global {
+  html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+    -ms-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
 
-body {
-  font-weight: $fw-regular;
-  font-size: 1.2rem;
-  font-family: $ff-sans;
-  line-height: 1.08;
-  background-color: #e5e5e5;
-}
+  body {
+    font-weight: $fw-regular;
+    font-size: 1.2rem;
+    font-family: $ff-sans;
+    line-height: 1.08;
+    background-color: $color-mercury;
+  }
 
-.container {
-  max-width: 1210px;
-  padding-left: 25px;
-  padding-right: 25px;
-  margin: 0 auto;
+  .container {
+    max-width: 1210px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 0 auto;
+  }
 }
 
 canvas {
