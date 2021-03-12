@@ -23,19 +23,14 @@ export const Header = ({ HeaderItems }) => {
       setShowMenu(false);
     }
   };
-
   useEffect(() => {
     const handleResize = () => {
-      console.log('słucham');
       if (window.innerWidth > 1100) {
         setMenuclick(false);
       }
     };
     window.addEventListener('resize', handleResize);
-    console.log('MOUNT');
-
     return () => {
-      console.log('UNMOUNT');
       window.removeEventListener('resize', handleResize);
     };
   }, []);
