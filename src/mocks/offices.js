@@ -1,8 +1,8 @@
-import ZurichImg from '../../assets/img/Zurich.png';
-import NicosiaImg from '../../assets/img/Nicosia.png';
-import PanamaCityImg from '../../assets/img/PanamaCity.png';
+import ZurichImg from 'src/assets/img/Zurich.png';
+import NicosiaImg from 'src/assets/img/Nicosia.png';
+import PanamaCityImg from 'src/assets/img/PanamaCity.png';
 
-const SectionItems = [
+export const offices = [
   {
     title: 'Zurich',
     country: '-Swizerland',
@@ -25,5 +25,3 @@ const SectionItems = [
     img: PanamaCityImg,
   },
 ];
-
-export default SectionItems;

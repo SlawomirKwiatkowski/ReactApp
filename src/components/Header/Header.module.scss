@@ -1,24 +1,48 @@
-.NavbarItems {
+@import '../../assets/styles/variable.module.scss';
+
+.container {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   z-index: 100;
+  height: 100px;
+  background-size: 100% 200%;
+  background-position: 0 100%;
+  background-image: linear-gradient(to bottom, black, transparent 50%);
+  transition: background-position 1s;
+}
+.containerActive {
+  background-position: 0 0;
+}
+.NavbarItems {
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
   height: 80px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 1.2rem;
+  font-size: 2rem;
   font-family: 'Times New Roman', serif;
+  max-width: 1420px;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0%;
+  right: 0%;
 }
-  
+
 .navbarLogo {
-  width: 90px;
-  color: #fff;
-  margin-top: 3%;
+  width: 250px;
+  color: $color-white;
+  margin-top: -5px;
+  margin-right: auto;
   justify-self: start;
   margin-left: 20px;
   cursor: pointer;
+}
+.menuIcon {
+  margin-left: auto;
+  display: none;
+  color: $color-white;
 }
 .navMenu {
   display: grid;
@@ -27,27 +51,104 @@
   list-style: none;
   text-align: center;
   list-style-type: none;
-  width: 90vw;
+  margin-left: auto;
   justify-content: end;
-  margin-right: 2rem;
+  margin-right: 20px;
 }
 .navLinks {
-  color: #fff;
+  color: $color-white;
   display: flex;
   align-items: center;
   text-decoration: none;
-  padding: 0 1rem;
+  padding-right: 10px;
   height: 100%;
   cursor: pointer;
 }
-  
-.navLinks-mobile {
-  display: none;
-}
-.emptyButton{
+
+.emptyButton {
   margin-right: 50px;
 }
 
-.button{
-  margin-right: 3% ;
+.button {
+  margin-right: 3%;
+}
+
+@media (max-width: 1100px) {
+  .navbarItems {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .navbarLogo {
+    margin-right: auto;
+  }
+  .navMenu {
+    display: none;
+  }
+
+  .navMenuActive {
+    position: relative;
+    margin-top: auto;
+    width: 40%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 1;
+    z-index: 1;
+  }
+  .navLinks {
+    text-align: center;
+    padding: 25px;
+    width: 100%;
+    display: table;
+  }
+  .menuIcon {
+    cursor: pointer;
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+  }
+  .navLinksMobile {
+    display: block;
+    text-align: center;
+  }
+  .button {
+    display: none;
+  }
+  .emptyButton {
+    display: none;
+  }
+}
+
+.fadeEnter {
+  .navLinks {
+    opacity: 0;
+  }
+  width: 0;
+  z-index: 0;
+}
+.fadeEnterActive {
+  .navLinks {
+    opacity: 1;
+    transition: opacity 500ms cubic-bezier(0.5, 0, 0.75, 0);
+  }
+  width: 40%;
+  transition: width 500ms linear;
+}
+.fadeExit {
+  .navLinks {
+    opacity: 1;
+  }
+  opacity: 1;
+}
+.fadeExitActive {
+  .navLinks {
+    opacity: 0;
+    transition: opacity 200ms cubic-bezier(0.5, 0, 0.75, 0);
+  }
+
+  width: 0;
+  transition: width 400ms linear;
 }

@@ -1,11 +1,5 @@
 export const HeaderItems = [
   {
-    title: 'Home',
-    url: '/',
-    cName: 'n.navLinks',
-    exact: true,
-  },
-  {
     title: 'Services',
     url: '/services',
     cName: 'n.navLinks',
@@ -24,5 +18,10 @@ export const HeaderItems = [
     title: 'Locations',
     url: '/locations',
     cName: 'n.navLinks',
+  },
+  {
+    title: 'Contact us',
+    url: '/contactUs',
+    cName: 'n.navLinksMobile',
   },
 ];

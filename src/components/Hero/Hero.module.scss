@@ -1,6 +1,8 @@
+@import '../../assets/styles/variable.module.scss';
+
 .hero {
   height: 648px;
-  background-image: url("../../assets/img/Top_baner.png");
+  background-image: url('../../assets/img/Top_baner.png');
   background-size: cover;
 }
 
@@ -16,8 +18,9 @@
   max-width: 740px;
   width: 100%;
   padding: 40px 60px;
-  background: #21394F;
-  color: #fff;
+  background: $cloud-burst;
+  color: $color-white;
+  box-shadow: 0px 26px 50px rgba(29, 44, 58, 0.3);
 }
 
 .bannerInner {

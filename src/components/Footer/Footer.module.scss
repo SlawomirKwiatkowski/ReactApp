@@ -1,56 +1,63 @@
-$btn-base-color: #C5AD8F;
-$base-bg-color: #e5e5e5;
-.container{
-  background-color: #21394f;
+@import '../../assets/styles/variable.module.scss';
+.container {
+  background-color: $cloud-burst;
   width: 100%;
-  z-index:200;
-  padding:5%;
+  z-index: 200;
+  padding: 5%;
+  padding-top: 0;
 }
-.row{
+.row {
   display: flex;
   flex-direction: row;
-  background-color: #21394f;
+  background-color: $cloud-burst;
   padding-bottom: 40px;
 
-  .contact{
-    flex-basis: 40%;
-  }
-      
-  .contactAddress{
-    flex-basis: 20%;
-  }
-  ul{
+  .contact {
+    flex-basis: 31%;
     width: auto;
     padding: 3%;
-    background-color: #21394f;
-    color:$base-bg-color;
-    
-    h1{
+    background-color: $cloud-burst;
+    color: $color-white;
+  }
+
+  .contactAddress {
+    flex-basis: 23%;
+    min-width: 140px;
+  }
+  ul {
+    width: auto;
+    padding: 3%;
+    background-color: $cloud-burst;
+    color: $color-white;
+
+    h1 {
       font-size: 24px;
       line-height: 2;
       padding-bottom: 20px;
     }
-    
-    h2{
+
+    h2 {
       line-height: 2;
       font-size: 12px;
-      color: $btn-base-color ;
+      color: $color-indian-khaki;
     }
-    h3{
+    h3 {
       padding-top: 10px;
       padding-bottom: 10px;
-      font-size: 16px;
-      color: $base-bg-color;
+      font-size: 18px;
+      line-height: 24px;
+      color: $color-white;
     }
-    h4{
-      color:$btn-base-color;
+    h4 {
+      font-size: 20px;
+      line-height: 24px;
+      color: $color-indian-khaki;
     }
-
   }
 }
-.row2{
+.row2 {
   padding-top: 10px;
-  border-top:$btn-base-color 1px solid;
+  border-top: $color-indian-khaki 1px solid;
   overflow: auto;
   display: flex;
   display: row;
@@ -58,21 +65,21 @@ $base-bg-color: #e5e5e5;
   background-color: #21394f;
   height: 100px;
 
-    h1{
-      text-align: center;
-      padding-left: 3%;
-      font-size: 16px;
-      padding-top: 1%;
-      color: $btn-base-color ;
-    }
+  h1 {
+    text-align: center;
+    padding-left: 3%;
+    font-size: 16px;
+    padding-top: 1%;
+    color: $color-indian-khaki;
+  }
 
-    h2{
-      margin-left: auto;
-      img{
-        height: 40px;
-      }
+  h2 {
+    margin-left: auto;
+    img {
+      height: 40px;
     }
+  }
 }
-.button{
+.button {
   position: inherit;
 }

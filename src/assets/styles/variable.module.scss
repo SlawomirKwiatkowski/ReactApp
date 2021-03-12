@@ -1,10 +1,17 @@
 /*
   Color
 */
+
 $color-white: #fff;
 $color-black: #000;
 // Main
-$color-dark-wheat:#c5ad8f;
+$color-mercury: #e5e5e5;
+$color-indian-khaki: #c5ad8f;
+$spring-wood: #f3efe8;
+$cloud-burst: #21394f;
+$mongoose: #b7a488;
+$silver: #c9c5c5;
+
 $color-pretty-dark: #211e21;
 $color-ashy: #34363f;
 $color-metal-grey: #a0a0ac;
@@ -64,6 +71,7 @@ $z-base-tooltip: 10000;
   Dimensions
 */
 $header-height: 73px;
+$hero-height: 648;
 
 /*
   Easing
@@ -96,4 +104,5 @@ $ease-in-out-back: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 // Usage in JavaScript: import vars from 'src/assets/styles/utils/vars.module.scss';
 :export {
   z-header: $z-header; // Example
+  heroHeight: $hero-height;
 }

@@ -1,20 +1,29 @@
+@import 'src/assets/styles/variable.module.scss';
+
 .sectionOurPromise {
-  padding-top: 10%;
-  padding-left: 40%;
-  padding-right: 15%;
-  
-  h1 {
-  font-weight: normal;
-  color: black;
-  }
-
+  margin-top: 120px;
+  margin-bottom: 120px;
   h2 {
-  padding-bottom: 2%;
-  font-weight: normal;
-  color: black;
-
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 37px;
+    color: $color-black;
+    margin-bottom: 26px;
   }
 }
-.button{
+.sectionOurPromiseInner {
+  margin-left: auto;
+  max-width: 740px;
+  margin-right: 60px;
+}
+.title {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 45px;
+  color: $color-black;
+}
+.button {
   position: inherit;
+  font-size: 20px;
 }

@@ -1,0 +1,29 @@
+@import '../../assets/styles/variable.module.scss';
+
+.navPanel {
+  display: flex;
+  flex-direction: row;
+
+  background-color: $color-indian-khaki;
+  margin-right: 50%;
+  text-align: right;
+  max-width: 710px;
+  padding-left: 150px;
+}
+.link,
+.link:visited {
+  padding: 5%;
+  font-size: 14px;
+  color: $color-white;
+  text-decoration: none;
+  text-align: center;
+  animation-duration: 3s;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.link:active {
+  text-decoration: underline;
+}

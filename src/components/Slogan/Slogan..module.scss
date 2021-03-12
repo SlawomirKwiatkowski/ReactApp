@@ -1,0 +1,26 @@
+@import 'src/assets/styles/variable.module.scss';
+
+.slogan {
+  margin-top: 140px;
+  margin-bottom: 140px;
+  text-align: center;
+  background: $cloud-burst;
+  box-shadow: 0px 26px 50px rgba(29, 44, 58, 0.3), 0px 4px 4px rgba(0, 0, 0, 0.25);
+  h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 400;
+    padding: 90px;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: $mongoose;
+  }
+  h2 {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 19, 2px;
+    color: $silver;
+    text-align: center;
+    font-weight: 400;
+  }
+}
