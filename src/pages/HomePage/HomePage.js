@@ -4,6 +4,7 @@ import { SectionOurPromise } from 'src/components/SectionOurPromise/SectionOurPr
 import { SectionOurOfficesBetter } from 'src/components/SectionOurOfficesBetter/SectionOurOfficesBetter';
 import SectionOurTeam from 'src/components/SectionOurTeam/SectionOurTeam';
 import { BannerBottom } from 'src/components/BannerBottom/BannerBottom';
+import { SectionOurServices } from 'src/components/SectionOurServices/SectionOurServices';
 
 import { Hero } from 'src/components/Hero/Hero';
 import { Default } from 'src/templates/Default';
@@ -22,6 +23,7 @@ export const HomePage = () => {
 
       <main>
         <SectionOurPromise />
+        <SectionOurServices />
         <SectionOurOfficesBetter />
         <SectionOurTeam />
         <BannerBottom

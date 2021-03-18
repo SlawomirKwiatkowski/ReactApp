@@ -43,6 +43,10 @@
   border: 2px solid $color-black;
 }
 
+.theme-arrowbutton2 {
+  background-color: $color-indian-khaki;
+}
+
 .size-medium {
   height: 50px;
   min-width: 170px;
@@ -85,6 +89,9 @@
 }
 
 .size-small4 {
+  min-width: 125px;
+  height: 45px;
+  padding: 0 25px;
   min-width: 125px;
   height: 45px;
   padding: 0 25px;

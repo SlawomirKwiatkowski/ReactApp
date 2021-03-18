@@ -3,22 +3,31 @@ import PropTypes from 'prop-types';
 
 import s from './BaseCollapse.module.scss';
 import classNames from 'classnames';
+
 export const BaseCollapse = ({ isOpened, tableItems }) => {
   const [height, setHeight] = useState(0);
   const initRender = useRef(true);
   const innerWrapper = useRef();
 
   useEffect(() => {
-    if (initRender.current) {
-      initRender.current = false;
-      return 0;
-    }
-    if (isOpened) {
-      const newHeight = innerWrapper.current.getBoundingClientRect().height;
-      setHeight(newHeight + 'px');
-    } else {
-      setHeight('0px');
-    }
+    const handleOpen = () => {
+      console.log('działam');
+      if (initRender.current) {
+        initRender.current = false;
+        return 0;
+      }
+      if (isOpened) {
+        const newHeight = innerWrapper.current.getBoundingClientRect().height;
+        setHeight(newHeight + 'px');
+        window.addEventListener('resize', handleOpen);
+      } else {
+        setHeight('0px');
+        return () => {
+          window.removeEventListener('resize', handleOpen);
+        };
+      }
+    };
+    handleOpen();
   }, [isOpened]);
 
   return (

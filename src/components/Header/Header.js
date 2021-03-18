@@ -8,8 +8,19 @@ import { BaseButton } from 'src/components/BaseButton/BaseButton';
 import { BaseHamburger } from 'src/components/BaseHamburger/BaseHamburger';
 import logo from 'src/assets/img/logo.svg';
 
-import v from 'src/assets/styles/variable.module.scss';
 import s from './Header.module.scss';
+
+export function requestAnimationCallback(callback) {
+  let wait;
+  return function (...args) {
+    if (wait) return;
+    wait = true;
+    requestAnimationFrame(() => {
+      wait = false;
+      callback(...args);
+    });
+  };
+}
 
 export const Header = ({ HeaderItems }) => {
   const [menuClick, setMenuclick] = useState(false);
@@ -36,13 +47,14 @@ export const Header = ({ HeaderItems }) => {
   }, []);
 
   useEffect(() => {
-    const handleScroll = () => {
+    const handleScroll = requestAnimationCallback(() => {
+      console.log('scroll');
       if (window.scrollY > 600) {
         setShowMenuBg(true);
       } else {
         setShowMenuBg(false);
       }
-    };
+    });
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);

@@ -1,0 +1,13 @@
+@import '../../assets/styles/variable.module.scss';
+
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+}
+.inputName{
+  margin:5px;
+  font-size: 14px;
+  height: auto;
+  align-items: center;
+}

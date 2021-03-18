@@ -1,0 +1,16 @@
+@import '../../assets/styles/variable.module.scss';
+
+.inputContainer{
+display: flex;
+flex-direction: column;
+}
+.inputName{
+margin:0px;
+font-size: 14px;
+height: auto;
+}
+.select{
+padding: 6px 10px;
+height: 40px;
+border: 1px solid $silver;
+}
