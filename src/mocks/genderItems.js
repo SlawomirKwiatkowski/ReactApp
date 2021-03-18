@@ -16,4 +16,5 @@ export const genderItems=[
 'Gender expression',
 'Gender identity',
 'MTF',
+'Other',
 ]

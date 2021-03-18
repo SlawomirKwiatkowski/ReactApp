@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import s from './BaseCheckbox.module.scss';
 
-export const BaseCheckbox = ({ name, value, onChange }) => {
+export const BaseCheckbox = ({ name, value, onChange,incorrect,message }) => {
 
     function handleChange(e) {
         console.log("typ", e.target.type)
@@ -17,6 +17,7 @@ export const BaseCheckbox = ({ name, value, onChange }) => {
             <label className={s.inputName}>
           I accept the Terms and Conditions
           </label>
+          {incorrect&&<span>{message}</span>}
         </div>
     )
 }
@@ -25,4 +26,6 @@ BaseCheckbox.propTypes = {
     name: PropTypes.string,
     value: PropTypes.bool, 
     onChange: PropTypes.func,
+    incorrect: PropTypes.bool,
+    message: PropTypes.string,
   };
